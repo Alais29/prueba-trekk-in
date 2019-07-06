@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40">
+<style>
+  .a{
+    fill:#FFF;
+  }
+</style>
+  <title>Logo</title>
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <polygon points="29 12.6 19.2 12.6 19.2 26.2 19.2 40 9.8 40 9.8 12.6 0 12.6 0 4 29 4"/>
+    <path d="M35 13L35 4 36 4 36 13 35 13ZM35 2L35 0 36 0 36 2 35 2ZM48 13L46.3 13 46.3 8.1C46.3 7.1 46.1 6.4 45.7 6 45.4 5.6 44.9 5.3 44.2 5.3 43.8 5.3 43.5 5.4 43.1 5.5 42.8 5.6 42.4 5.8 42.1 6 41.8 6.2 41.5 6.4 41.3 6.7 41 7 40.9 7.3 40.7 7.7L40.7 13 39 13 39 4.2 40.6 4.2 40.6 6.1C41 5.4 41.6 4.9 42.4 4.6 43.1 4.2 44 4 44.9 4 45.5 4 46 4.1 46.4 4.3 46.8 4.5 47.1 4.7 47.3 5.1 47.6 5.4 47.8 5.8 47.9 6.2 48 6.7 48 7.2 48 7.7L48 13Z"/>
+  </defs>
+  <g style="fill:none;stroke-width:1;stroke:none">
+        <g transform="translate(-136 -45)translate(0 2)translate(136 43)">
+            <use xlink:href="#path-1" class="a"/>
+            <use xlink:href="#path-1" fill="#011627"/>
+            <use xlink:href="#path-2" class="a"/>
+            <use xlink:href="#path-2" fill="#000"/>
+        </g>
+  </g>
+</svg>
