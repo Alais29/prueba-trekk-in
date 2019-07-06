@@ -1,0 +1,22 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        padding-right: 1em;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 1em;
+        }
+    }
+}

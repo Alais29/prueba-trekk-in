@@ -58,6 +58,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -116,6 +118,30 @@ h3, h4 {
  * @since 1.0
  *
  */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__items {
+  display: flex;
+  align-items: center;
+}
+.navigation__item {
+  padding-right: 1em;
+}
+.navigation__buttons {
+  display: flex;
+  align-items: center;
+}
+.navigation__buttons a {
+  margin-left: 1em;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
