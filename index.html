@@ -16,49 +16,51 @@
 
 <body>
 
-  <nav>
-    <ul>
-      <li>
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40">
-          <style>
-            .a {
-              fill: #FFF;
-            }
-          </style>
-          <title>Logo</title>
-          <desc>Created with Sketch.</desc>
-          <defs>
-            <polygon points="29 12.6 19.2 12.6 19.2 26.2 19.2 40 9.8 40 9.8 12.6 0 12.6 0 4 29 4" />
-            <path
-              d="M35 13L35 4 36 4 36 13 35 13ZM35 2L35 0 36 0 36 2 35 2ZM48 13L46.3 13 46.3 8.1C46.3 7.1 46.1 6.4 45.7 6 45.4 5.6 44.9 5.3 44.2 5.3 43.8 5.3 43.5 5.4 43.1 5.5 42.8 5.6 42.4 5.8 42.1 6 41.8 6.2 41.5 6.4 41.3 6.7 41 7 40.9 7.3 40.7 7.7L40.7 13 39 13 39 4.2 40.6 4.2 40.6 6.1C41 5.4 41.6 4.9 42.4 4.6 43.1 4.2 44 4 44.9 4 45.5 4 46 4.1 46.4 4.3 46.8 4.5 47.1 4.7 47.3 5.1 47.6 5.4 47.8 5.8 47.9 6.2 48 6.7 48 7.2 48 7.7L48 13Z" />
-          </defs>
-          <g style="fill:none;stroke-width:1;stroke:none">
-            <g transform="translate(-136 -45)translate(0 2)translate(136 43)">
-              <use xlink:href="#path-1" class="a" />
-              <use xlink:href="#path-1" fill="#011627" />
-              <use xlink:href="#path-2" class="a" />
-              <use xlink:href="#path-2" fill="#000" />
+  <nav class="navigation">
+    <ul class="navigation__items">
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="40" viewBox="0 0 48 40">
+            <style>
+              .a {
+                fill: #FFF;
+              }
+            </style>
+            <title>Logo</title>
+            <desc>Created with Sketch.</desc>
+            <defs>
+              <polygon points="29 12.6 19.2 12.6 19.2 26.2 19.2 40 9.8 40 9.8 12.6 0 12.6 0 4 29 4" />
+              <path
+                d="M35 13L35 4 36 4 36 13 35 13ZM35 2L35 0 36 0 36 2 35 2ZM48 13L46.3 13 46.3 8.1C46.3 7.1 46.1 6.4 45.7 6 45.4 5.6 44.9 5.3 44.2 5.3 43.8 5.3 43.5 5.4 43.1 5.5 42.8 5.6 42.4 5.8 42.1 6 41.8 6.2 41.5 6.4 41.3 6.7 41 7 40.9 7.3 40.7 7.7L40.7 13 39 13 39 4.2 40.6 4.2 40.6 6.1C41 5.4 41.6 4.9 42.4 4.6 43.1 4.2 44 4 44.9 4 45.5 4 46 4.1 46.4 4.3 46.8 4.5 47.1 4.7 47.3 5.1 47.6 5.4 47.8 5.8 47.9 6.2 48 6.7 48 7.2 48 7.7L48 13Z" />
+            </defs>
+            <g style="fill:none;stroke-width:1;stroke:none">
+              <g transform="translate(-136 -45)translate(0 2)translate(136 43)">
+                <use xlink:href="#path-1" class="a" />
+                <use xlink:href="#path-1" fill="#011627" />
+                <use xlink:href="#path-2" class="a" />
+                <use xlink:href="#path-2" fill="#000" />
+              </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+        </a>
       </li>
-      <li>Acerca de</li>
-      <li>Características</li>
-      <li>Precios</li>
+      <li class="navigation__item"><a href="" class="navigation__link">Acerca de</a></li>
+      <li class="navigation__item"><a href="" class="navigation__link">Características</a></li>
+      <li class="navigation__item"><a href="" class="navigation__link">Precios</a></li>
     </ul>
     <div>
-      <a href="#">Iniciar Sesión</a>
-      <a href="#">Regístrate</a>
+      <a href="#" class="navigation__button">Iniciar Sesión</a>
+      <a href="#" class="navigation__button--blue">Regístrate</a>
     </div>
   </nav>
 
-  <header>
-    <div>
+  <header class="h-section">
+    <div class="h-section__text">
       <h1>Haz Trekking sin parar</h1>
       <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir
         la mejor ruta a tomar con tus compañeros de expedición</p>
     </div>
-    <div>
+    <div class="h-section__img">
       <svg width="1440px" height="865px" viewBox="0 0 1440 865" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
@@ -144,10 +146,10 @@
     </div>
   </header>
 
-  <main>
-    <h2>Características</h2>
-    <div>
-      <div>
+  <main class="m-features container">
+    <h2 class="m-features__title">Características</h2>
+    <div class="row">
+      <div class="m-features__image">
         <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
           <g class="bar-graph" fill-rule="evenodd">
             <path class="a-bar" fill="#EE9480"
@@ -158,7 +160,7 @@
           </g>
         </svg>
       </div>
-      <div>
+      <div class="m-features__text">
         <h3>Estadísticas de tu progreso </h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed minima nobis harum totam incidunt nulla ipsa
           deserunt non ipsum perferendis, quae unde temporibus natus deleniti. Earum quam asperiores ad nam.</p>
@@ -166,40 +168,42 @@
     </div>
   </main>
 
-  <section>
-    <h2>Precio</h2>
-    <div>
-      <div>
+  <section class="prices">
+    <h2 class="prices__title">Precio</h2>
+    <div class="card">
+      <div class="card__price">
         <p>Trekk-in Free</p>
         <h4>$ 0 / mes</h4>
       </div>
-      <ul>
-        <li>Ver mapas creados por usuarios</li>
-        <li>Concretar con otros usuarios</li>
+      <ul class="card__features">
+        <li class="card__feature">Ver mapas creados por usuarios</li>
+        <li class="card__feature">Concretar con otros usuarios</li>
       </ul>
-      <a href="#">Obtén Free</a>
+      <a href="#" class="card__button">Obtén Free</a>
     </div>
-    <div>
-        <div>
-          <p>Trekk-in Premium</p>
-          <h4>$ 3500 / mes</h4>
-        </div>
-        <ul>
-          <li>Ver mapas creados por usuarios</li>
-          <li>Concretar con otros usuarios</li>
-          <li>Definir mejores rutas</li>
-          <li>Mapas Offline</li>
-          <li>Integración con otras aplicaciones</li>
-        </ul>
-        <a href="#">Obtén Free</a>
+    <div class="card">
+      <div class="card__price">
+        <p>Trekk-in Premium</p>
+        <h4>$ 3500 / mes</h4>
       </div>
+      <ul class="card__features">
+        <li class="card__feature">Ver mapas creados por usuarios</li>
+        <li class="card__feature">Concretar con otros usuarios</li>
+        <li class="card__feature">Definir mejores rutas</li>
+        <li class="card__feature">Mapas Offline</li>
+        <li class="card__feature">Integración con otras aplicaciones</li>
+      </ul>
+      <a href="#" class="card__button">Obtén Free</a>
+    </div>
   </section>
 
-  <footer>
-    <p>Legal</p>
-    <p>Cookies</p>
-    <p>Sobre anuncios</p>
-    <p>2018 Trekk-in SPA</p>
+  <footer class="f-section">
+    <ul>
+      <li class="f-section__item"><a href="">Legal</a></li>
+      <li class="f-section__item"><a href="">Cookies</a></li>
+      <li class="f-section__item"><a href="">Sobre anuncios</a></li>
+      <li class="f-section__item"><a href="">2018 Trekk-in SPA</a></li>
+    </ul>
   </footer>
 
 </body>
