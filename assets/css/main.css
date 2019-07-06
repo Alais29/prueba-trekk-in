@@ -51,6 +51,20 @@
  * @since 1.0
  *
  */
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -61,6 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.125em;
+}
+
+h2 {
+  font-size: 2.8125em;
+}
+
+h3, h4 {
+  font-size: 2.5em;
 }
 
 /*
