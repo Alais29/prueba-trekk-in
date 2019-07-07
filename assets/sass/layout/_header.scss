@@ -1,0 +1,20 @@
+.h-section {
+    margin: 3em 0;
+    position: relative;
+
+    &__text {
+        @media screen and (min-width: 650px) {
+            width: 500px;
+            margin-left: 10%;
+        }
+    }
+
+    &__img {
+        @media screen and (min-width: 850px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+}
