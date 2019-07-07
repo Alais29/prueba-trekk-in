@@ -1,0 +1,33 @@
+.f-section {
+  background-color: $raisin-black;
+  color: $silver-chalice;
+
+  a {
+    color: $silver-chalice;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 792px) {
+        justify-content: flex-start;
+      }
+  }
+
+  &__item {
+    padding-right: 2em;
+  }
+
+  &__copyright {
+    align-self: center;
+    justify-self: center;
+    @media screen and (min-width: 792px) {
+      justify-self: end;
+    }
+  }
+}
