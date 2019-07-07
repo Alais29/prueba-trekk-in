@@ -19,7 +19,7 @@ updateViewBox = function(){
 svg.onload = updateViewBox;
 
 // Firefox & IE
-//console.log(svg.addEventListener('SVGLoad', updateViewBox, true));
+svg.addEventListener('SVGLoad', updateViewBox, true);
 
 /* Fire if the media condition changes */
 mq.addListener(updateViewBox);            

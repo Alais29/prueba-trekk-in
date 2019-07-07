@@ -152,10 +152,33 @@ h3, h4 {
   grid-template-columns: 1fr;
   grid-template-rows: 109px 1fr 1fr 1fr 1fr;
 }
+@media screen and (min-width: 850px) {
+  .grid-container {
+    grid-template-rows: 109px 2fr 1fr 1fr 1fr;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+}
 
 .h-section {
   margin: 3em 0;
   position: relative;
+  background-color: transparent;
+}
+@media screen and (min-width: 850px) {
+  .h-section::before {
+    content: " ";
+    position: absolute;
+    height: 950px;
+    z-index: -1;
+    background-image: url("../img/bg-hero.svg");
+    width: 100vw;
+    background-size: cover;
+    background-position: top right;
+  }
 }
 @media screen and (min-width: 650px) {
   .h-section__text {
@@ -165,11 +188,15 @@ h3, h4 {
 }
 @media screen and (min-width: 850px) {
   .h-section__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
+    display: none;
   }
+}
+
+.m-features {
+  padding: 1em 0;
+}
+.m-features__title {
+  text-align: center;
 }
 
 /*
