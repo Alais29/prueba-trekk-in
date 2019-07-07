@@ -151,15 +151,15 @@ h3, h4 {
   grid-template-columns: 1fr;
   grid-template-rows: 109px 1fr 1fr 1fr 109px;
 }
-@media screen and (min-width: 974px) {
+@media screen and (min-width: 945px) {
   .grid-container {
-    grid-template-rows: 109px 2fr 1fr 1fr 109px;
+    grid-template-rows: 109px 1.5fr 1fr 1fr 109px;
   }
 }
 
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 70px;
   margin-top: 3em;
 }
@@ -242,13 +242,35 @@ h3, h4 {
 .m-features__image {
   align-self: center;
 }
+.m-features__text {
+  align-self: center;
+}
 
 .prices {
-  padding: 2em 15%;
+  position: relative;
+  background-color: transparent;
+}
+.prices__title {
+  color: #fff;
+  margin-top: 1em;
+}
+.prices .row {
+  padding: 4em 15%;
+}
+.prices::before {
+  content: " ";
+  position: absolute;
+  top: -161px;
+  height: 1250px;
+  z-index: -1;
   background-image: url("../img/bg-price.svg");
+  width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
+}
+@media screen and (min-width: 974px) {
+  .prices::before {
+    height: 862px;
+  }
 }
 .prices__title {
   text-align: center;

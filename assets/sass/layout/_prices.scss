@@ -1,41 +1,63 @@
 .prices {
-    padding: 2em 15%;
-    background-image: url('../img/bg-price.svg');
+  position: relative;
+  background-color: transparent;
+
+  &__title {
+      color: $white;
+      margin-top: 1em;
+  }
+
+  .row {
+      padding: 4em 15%;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -161px;
+    height: 1250px;
+    z-index: -1;
+    background-image: url("../img/bg-price.svg");
+    width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
 
-    &__title {
-        text-align: center;
+    @media screen and (min-width: 974px) {
+        height: 862px;
+    }
+  }
+
+
+  &__title {
+    text-align: center;
+  }
+
+  .card {
+    justify-self: center;
+    padding: 1em;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+
+    &__price {
+      padding-bottom: 1em;
     }
 
-    .card {
-        justify-self: center;
-        padding: 1em;
-        background-color: $white;
-        display: flex;
-        flex-direction: column;
+    &__features {
+      padding: 1em 0;
+      flex-grow: 2;
+      flex-basis: 160px;
+      border-bottom: solid 1px $spanish-gray;
+      border-top: solid 1px $spanish-gray;
+      padding-left: 1.5em;
+      list-style-type: disc;
 
-        &__price {
-            padding-bottom: 1em;
-        }
-
-        &__features {
-            padding: 1em 0;
-            flex-grow: 2;
-            flex-basis: 160px;
-            border-bottom: solid 1px $spanish-gray;
-            border-top: solid 1px $spanish-gray;
-            padding-left: 1.5em;
-            list-style-type: disc;
-
-            li {
-                margin: .5em 0;
-            }
-        }
-
-        &__button {
-            flex-grow: 1;
-        }
+      li {
+        margin: 0.5em 0;
+      }
     }
+
+    &__button {
+      flex-grow: 1;
+    }
+  }
 }
