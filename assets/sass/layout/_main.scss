@@ -1,6 +1,11 @@
 .m-features {
-    padding: 1em 0;
+    padding: 2em 15%;
+    
     &__title {
         text-align: center;
+    }
+
+    &__image{
+        align-self: center;
     }
 }
