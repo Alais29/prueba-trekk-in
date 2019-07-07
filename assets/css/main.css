@@ -267,7 +267,7 @@ h3, h4 {
   width: 100%;
   background-size: cover;
 }
-@media screen and (min-width: 974px) {
+@media screen and (min-width: 945px) {
   .prices::before {
     height: 862px;
   }
