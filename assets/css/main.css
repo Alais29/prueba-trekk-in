@@ -122,25 +122,110 @@ h3, h4 {
  *
  */
 .navigation {
+  position: relative;
+}
+.navigation__logo {
+  position: absolute;
+  padding: 2em 1em 2em 0;
+}
+.navigation__collapsible {
+  text-align: right;
+  padding-top: 2em;
+  width: 100%;
+}
+.navigation__collapsible label {
+  font-size: 1.8rem;
+}
+.navigation #menu {
+  display: none;
+}
+.navigation input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+.navigation__container {
+  max-height: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 2em 0;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  z-index: 2;
 }
 .navigation__items {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .navigation__item {
-  padding-right: 1em;
+  padding: 0.5em 0;
+  border-bottom: solid 1px #8f9199;
+  width: 100%;
+  text-align: center;
+}
+.navigation__link {
+  color: #221d23;
 }
 .navigation__buttons {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .navigation__buttons a {
-  margin-left: 1em;
+  margin: 0.5em 0;
 }
 
+@media only screen and (min-width: 730px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__logo {
+    position: static;
+    padding: 2em 1em 2em 0;
+  }
+  .navigation__collapsible {
+    width: 100%;
+    clear: right;
+    padding-top: 0;
+  }
+  .navigation__collapsible label {
+    display: none;
+  }
+  .navigation__container {
+    max-height: 100%;
+    padding: 2em;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+  }
+  .navigation__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigation__item {
+    padding: 0;
+    padding-right: 1em;
+    border: none;
+    width: initial;
+    text-align: left;
+  }
+  .navigation__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigation__buttons a {
+    margin: 0;
+    margin-left: 1em;
+  }
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -175,6 +260,7 @@ h3, h4 {
   margin: 3em 0;
   position: relative;
   background-color: transparent;
+  z-index: -1;
 }
 @media screen and (min-width: 850px) {
   .h-section::before {
@@ -311,6 +397,10 @@ h3, h4 {
   margin-top: 1em;
   padding: 1em 0;
   cursor: pointer;
+}
+
+.login-button {
+  color: #221d23;
 }
 
 .card {

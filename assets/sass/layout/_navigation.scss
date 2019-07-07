@@ -1,23 +1,123 @@
 .navigation {
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    padding: 2em 1em 2em 0;
+  }
+
+  &__collapsible {
+    text-align: right;
+    padding-top: 2em;
+    width: 100%;
+    label {
+      font-size: 1.8rem;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+
+  input:checked ~ .navigation__container {
+    max-height: 100%;
+  }
+
+  &__container {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 2;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    padding: .5em 0;
+    border-bottom: solid 1px $spanish-gray;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__link {
+    color: $raisin-black;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    
+    a {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 730px) {
+  .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 2em 0;
+
+    &__logo {
+      position: static;
+      padding: 2em 1em 2em 0;
+    }
+
+    &__collapsible {
+      width: 100%;
+      clear: right;
+      padding-top: 0;
+      label {
+        display: none;
+      }
+    }
+
+    &__container {
+      max-height: 100%;
+      padding: 2em;
+      overflow: visible;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0;
+    }
 
     &__items {
-        display: flex;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     &__item {
-        padding-right: 1em;
+      padding: 0;
+      padding-right: 1em;
+      border: none;
+      width: initial;
+      text-align: left;
     }
 
     &__buttons {
-        display: flex;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-        a {
-            margin-left: 1em;
-        }
+      a {
+        margin: 0;
+        margin-left: 1em;
+      }
     }
+  }
 }
