@@ -209,6 +209,42 @@ h3, h4 {
   align-self: center;
 }
 
+.prices {
+  padding: 2em 15%;
+  background-image: url("../img/bg-price.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.prices__title {
+  text-align: center;
+}
+.prices .card {
+  justify-self: center;
+  padding: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.prices .card__price {
+  padding-bottom: 1em;
+}
+.prices .card__features {
+  padding: 1em 0;
+  flex-grow: 2;
+  flex-basis: 160px;
+  border-bottom: solid 1px #8f9199;
+  border-top: solid 1px #8f9199;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+.prices .card__features li {
+  margin: 0.5em 0;
+}
+.prices .card__button {
+  flex-grow: 1;
+}
+
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
