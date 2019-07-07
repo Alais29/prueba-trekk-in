@@ -1,0 +1,22 @@
+.primary-button {
+  background-color: $ball-blue;
+  padding: 0.5em;
+  color: $white;
+
+  &:hover {
+      background-color: $middle-blue;
+  }
+
+  &:focus {
+      background-color: $lavender-gray;
+  }
+
+  &--large {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 1em;
+    padding: 1em 0;
+    cursor: pointer;
+  }
+}

@@ -275,31 +275,6 @@ h3, h4 {
 .prices__title {
   text-align: center;
 }
-.prices .card {
-  justify-self: center;
-  padding: 1em;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-.prices .card__price {
-  padding-bottom: 1em;
-}
-.prices .card__features {
-  padding: 1em 0;
-  flex-grow: 2;
-  flex-basis: 160px;
-  border-bottom: solid 1px #8f9199;
-  border-top: solid 1px #8f9199;
-  padding-left: 1.5em;
-  list-style-type: disc;
-}
-.prices .card__features li {
-  margin: 0.5em 0;
-}
-.prices .card__button {
-  flex-grow: 1;
-}
 
 /*
  * 
@@ -318,5 +293,53 @@ h3, h4 {
  * @since 1.0
  *
  */
+.primary-button {
+  background-color: #2ab7ca;
+  padding: 0.5em;
+  color: #fff;
+}
+.primary-button:hover {
+  background-color: #77d1dd;
+}
+.primary-button:focus {
+  background-color: #c7cbcc;
+}
+.primary-button--large {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-top: 1em;
+  padding: 1em 0;
+  cursor: pointer;
+}
+
+.card {
+  justify-self: center;
+  padding: 1em;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card__price {
+  padding-bottom: 1em;
+}
+.card__features {
+  padding: 1em 0;
+  flex-grow: 2;
+  flex-basis: 160px;
+  border-bottom: solid 1px #8f9199;
+  border-top: solid 1px #8f9199;
+  padding-left: 1.5em;
+  list-style-type: disc;
+}
+.card__features li {
+  margin: 0.5em 0;
+}
+.card__button {
+  flex-grow: 1;
+  flex-basis: 30px;
+  display: flex;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */
