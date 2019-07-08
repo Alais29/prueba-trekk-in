@@ -4,6 +4,9 @@
   background-color: $white;
   display: flex;
   flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &:hover {
     box-shadow: 3px 3px 8px black;

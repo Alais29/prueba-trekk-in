@@ -383,6 +383,9 @@ h3, h4 {
   background-color: #2ab7ca;
   padding: 0.5em;
   color: #fff;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 .primary-button:hover {
   background-color: #77d1dd;
@@ -409,6 +412,9 @@ h3, h4 {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 .card:hover {
   box-shadow: 3px 3px 8px black;
