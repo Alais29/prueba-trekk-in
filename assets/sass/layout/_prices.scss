@@ -1,6 +1,7 @@
 .prices {
   position: relative;
   background-color: transparent;
+  padding-top: 5em;
 
   &__title {
       color: $white;
@@ -15,14 +16,14 @@
     content: " ";
     position: absolute;
     top: -161px;
-    height: 1320px;
+    height: 1390px;
     z-index: -1;
     background-image: url("../img/bg-price.svg");
     width: 100%;
     background-size: cover;
 
     @media screen and (min-width: 791px) {
-        height: 945px;
+        height: 1022px;
     }
   }
   
