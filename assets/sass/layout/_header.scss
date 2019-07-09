@@ -5,7 +5,7 @@
   z-index: -1;
 
   &::before {
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 791px) {
       content: " ";
       position: absolute;
       height: 950px;
@@ -25,8 +25,17 @@
   }
 
   &__img {
-    @media screen and (min-width: 850px) {
-      display: none;
+    background-image: url("../img/bg-hero.png");
+    width: 100%;
+    height: 520px;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 791px) {
+      background-image: none;
+      width: 0;
+      height: 0;
     }
   }
 }
