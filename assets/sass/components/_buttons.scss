@@ -2,9 +2,15 @@
   background-color: $ball-blue;
   padding: 0.5em;
   color: $white;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
   transition-property: background-color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 
   &:hover {
       background-color: $middle-blue;

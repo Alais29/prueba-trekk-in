@@ -6,8 +6,12 @@
 
 
   &__d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   &__logo {
@@ -19,23 +23,25 @@
     text-align: right;
     padding: 2em 0;
     width: 100%;
-    label {
+    .menu {
       font-size: 1.8rem;
+      display: block;
     }
   }
 
   #menu {
     display: none;
-  }
-
-  input:checked ~ .navigation__container {
-    max-height: 100%;
-  }
+  } 
 
   &__container {
     max-height: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
     overflow: hidden;
     background-color: white;
@@ -43,9 +49,16 @@
   }
 
   &__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   &__item {
@@ -60,9 +73,16 @@
   }
 
   &__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     align-items: center;
     
     a {
@@ -73,8 +93,12 @@
 
 @media only screen and (min-width: 730px) {
   .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     &__logo {
       position: static;
@@ -85,7 +109,7 @@
       width: 100%;
       clear: right;
       padding: 0;
-      label {
+      .menu {
         display: none;
       }
     }
@@ -94,20 +118,36 @@
       max-height: 100%;
       padding: 2em;
       overflow: visible;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
     }
 
     &__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding: 2em 0;
     }
 
     &__items {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
 
     &__item {
@@ -119,9 +159,16 @@
     }
 
     &__buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
 
       a {
         margin: 0;
