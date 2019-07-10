@@ -15,7 +15,7 @@ $(function () {
         }
     });
 
-    //Animates menu to slide on and out on small screens
+    //Animates menu to slide in and out on small screens
     $('#menu').click(function () {
         if ($(this).is(':checked')) {
             $(".navigation__container").animate({
